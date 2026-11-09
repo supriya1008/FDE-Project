@@ -6,7 +6,7 @@ from langchain_community.document_loaders import PyPDFLoader, TextLoader
 from docx import Document as DocxDocument
 
 
-SUPPORTED_FILE_TYPES = [".pdf", ".txt", ".docx",".md"]
+SUPPORTED = [".pdf", ".txt", ".docx",".md"]
 
 def load_file(path: Path) -> list[Document]:
     suffix = path.suffix.lower()
